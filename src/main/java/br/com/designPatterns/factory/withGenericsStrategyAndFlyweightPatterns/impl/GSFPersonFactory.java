@@ -1,8 +1,9 @@
-package br.com.designPatterns.factory.withGenericsStrategyAndFlyweightPatterns;
+package br.com.designPatterns.factory.withGenericsStrategyAndFlyweightPatterns.impl;
 
 import org.springframework.stereotype.Component;
 
 import br.com.designPatterns.factory.domain.Person;
+import br.com.designPatterns.factory.withGenericsStrategyAndFlyweightPatterns.GenericsStrategyFlyweightFactory;
 
 @Component
 public class GSFPersonFactory implements GenericsStrategyFlyweightFactory<Person> {

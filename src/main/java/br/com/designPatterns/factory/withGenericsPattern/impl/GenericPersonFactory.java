@@ -1,8 +1,9 @@
-package br.com.designPatterns.factory.withGenericsPattern;
+package br.com.designPatterns.factory.withGenericsPattern.impl;
 
 import org.springframework.stereotype.Component;
 
 import br.com.designPatterns.factory.domain.Person;
+import br.com.designPatterns.factory.withGenericsPattern.GenericFactory;
 
 @Component
 public class GenericPersonFactory implements GenericFactory<Person>{
