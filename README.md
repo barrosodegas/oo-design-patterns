@@ -8,7 +8,7 @@
 
 - Linux Ubuntu 18.10
 - Java 14
-- Spring Boot 2.2.5 
+- Spring Boot 2.2.7 
 - Groovy 3.0.4 to BDD tests
 - IDE: Eclipse, InteliJ or your preference
 
