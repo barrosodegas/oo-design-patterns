@@ -17,7 +17,7 @@ import spock.lang.Specification
 @ActiveProfiles(value = ['test'])
 @ContextConfiguration(loader = SpringBootContextLoader, classes = [DesignPatternsApplication])
 @SpringBootTest(classes = [DesignPatternsApplication])
-class GenericFactoryTest extends Specification {
+class GenericFactoryIT extends Specification {
 	
 	@Autowired
 	private GenericFactory<Person> personFactory;
