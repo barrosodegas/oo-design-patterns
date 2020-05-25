@@ -23,11 +23,15 @@
 
 ## Design patterns available so far
 
-- Factory
-  1. Builder Factory
-  2. Generic Factory
+- Factory with:
+  1. Builder
+  2. Generics
   3. Factory with Generics, Strategy and Flyweight
-  4. Singleton Factory
+  4. Singleton
+
+- Builder
+  1. Generics and Reflection(Not recommended!!!)
+  2. Singleton
 
 # Note
 
