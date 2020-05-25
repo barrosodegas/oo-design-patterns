@@ -4,6 +4,7 @@ public class Person {
 
 	String name;
 	String lastName;
+	int age;
 	
 	public Person() { }
 	
@@ -14,6 +15,12 @@ public class Person {
 	public Person(String name, String lastName) {
 		this.name = name;
 		this.lastName = lastName;
+	}
+	
+	public Person(String name, String lastName, int age) {
+		this.name = name;
+		this.lastName = lastName;
+		this.age = age;
 	}
 	
 	public String getName() {
@@ -30,6 +37,14 @@ public class Person {
 	
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
 	}
 	
 }
