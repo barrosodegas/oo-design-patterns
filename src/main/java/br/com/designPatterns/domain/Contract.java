@@ -1,4 +1,4 @@
-package br.com.designPatterns.factory.domain;
+package br.com.designPatterns.domain;
 
 public class Contract {
 

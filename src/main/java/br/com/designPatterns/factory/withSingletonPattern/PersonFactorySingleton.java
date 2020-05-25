@@ -1,6 +1,6 @@
 package br.com.designPatterns.factory.withSingletonPattern;
 
-import br.com.designPatterns.factory.domain.Person;
+import br.com.designPatterns.domain.Person;
 
 public class PersonFactorySingleton {
 	

@@ -2,7 +2,7 @@ package br.com.designPatterns.factory.withBuilderPattern;
 
 import org.springframework.stereotype.Component;
 
-import br.com.designPatterns.factory.domain.Person;
+import br.com.designPatterns.domain.Person;
 
 @Component
 public class PersonFactoryBuilder {

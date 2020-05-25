@@ -7,8 +7,8 @@ import org.springframework.test.context.ActiveProfiles
 import org.springframework.test.context.ContextConfiguration
 
 import br.com.designPatterns.DesignPatternsApplication
-import br.com.designPatterns.factory.domain.Contract
-import br.com.designPatterns.factory.domain.Person
+import br.com.designPatterns.domain.Contract
+import br.com.designPatterns.domain.Person
 import br.com.designPatterns.factory.withGenericsPattern.GenericFactory
 import br.com.designPatterns.factory.withGenericsPattern.impl.GenericContractFactory
 import br.com.designPatterns.factory.withGenericsPattern.impl.GenericPersonFactory

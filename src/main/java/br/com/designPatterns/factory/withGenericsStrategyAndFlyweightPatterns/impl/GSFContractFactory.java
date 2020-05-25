@@ -2,7 +2,7 @@ package br.com.designPatterns.factory.withGenericsStrategyAndFlyweightPatterns.i
 
 import org.springframework.stereotype.Component;
 
-import br.com.designPatterns.factory.domain.Contract;
+import br.com.designPatterns.domain.Contract;
 import br.com.designPatterns.factory.withGenericsStrategyAndFlyweightPatterns.GenericsStrategyFlyweightFactory;
 
 @Component

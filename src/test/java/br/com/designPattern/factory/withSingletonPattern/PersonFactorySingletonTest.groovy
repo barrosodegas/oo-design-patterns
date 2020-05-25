@@ -1,6 +1,6 @@
 package br.com.designPattern.factory.withSingletonPattern
 
-import br.com.designPatterns.factory.domain.Person
+import br.com.designPatterns.domain.Person
 import br.com.designPatterns.factory.withSingletonPattern.PersonFactorySingleton
 import spock.lang.Specification
 
