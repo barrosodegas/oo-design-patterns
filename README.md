@@ -23,7 +23,6 @@
 
 ## Design patterns available so far
 
-
 - Strategy
   1. Simple Strategy
 
@@ -36,6 +35,9 @@
 - Builder
   1. Generics and Reflection(Not recommended!!!)
   2. Singleton
+
+- Flyweight
+  1. Strategy
 
 # Note
 
