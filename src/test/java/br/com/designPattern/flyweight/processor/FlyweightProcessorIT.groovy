@@ -76,5 +76,18 @@ class FlyweightProcessorIT extends Specification {
 			service instanceof ValidateTextFlyweightService
 			!result
 	}
+	
+	def "Should return error if service not found"() {
+		given:
+			def value = new File("/tmp/test.csv")
+			def TypeService file = TypeService.FILE
+			
+		when:
+			flyweightProcessor.getService(file)
+		
+		then:
+			def error = thrown(Exception)
+			error.message == "Service not found to type: FILE"
+	}
 
 }
