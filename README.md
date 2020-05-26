@@ -23,6 +23,10 @@
 
 ## Design patterns available so far
 
+
+- Strategy
+  1. Simple Strategy
+
 - Factory with:
   1. Builder
   2. Generics
