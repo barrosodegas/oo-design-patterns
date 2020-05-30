@@ -24,25 +24,24 @@ class ProductFlyweightProcessorIT extends Specification {
 	
 	def "Should get ProductAFlyweightService of ProductFlyweightService and save product with valid name and description"() {
 		given:
-			def product = new Product(name: "Test A", description: "Test")
-			def BrandProduct a = BrandProduct.A
+			def product = new Product(name: "Test A", description: "Test", brand: BrandProduct.A)
 			
 		when:
-			def service = productFlyweightProcessor.getService(a)
+			def service = productFlyweightProcessor.getService(product.brand)
 			def result = service.save(product)
 		
 		then:
 			service instanceof ProductAFlyweightService
 			result.name == product.name
+			result.brand == product.brand
 	}
 	
 	def "Should get ProductAFlyweightService of ProductFlyweightService and return error if product is invalid"() {
 		given:
-			def product = new Product(name: "Test A")
-			def BrandProduct a = BrandProduct.A
+			def product = new Product(name: "Test A", brand: BrandProduct.A)
 			
 		when:
-			def service = productFlyweightProcessor.getService(a)
+			def service = productFlyweightProcessor.getService(product.brand)
 			service.save(product)
 		
 		then:
@@ -53,25 +52,24 @@ class ProductFlyweightProcessorIT extends Specification {
 	
 	def "Should get ProductBFlyweightService of ProductFlyweightService and save product with valid name and description"() {
 		given:
-			def product = new Product(name: "Test B")
-			def BrandProduct b = BrandProduct.B
+			def product = new Product(name: "Test B", , brand: BrandProduct.B)
 			
 		when:
-			def service = productFlyweightProcessor.getService(b)
+			def service = productFlyweightProcessor.getService(product.brand)
 			def result = service.save(product)
 		
 		then:
 			service instanceof ProductBFlyweightService
 			result.name == product.name
+			result.brand == product.brand
 	}
 	
 	def "Should get ProductBFlyweightService of ProductFlyweightService and return error if product is invalid"() {
 		given:
-			def product = new Product()
-			def BrandProduct b = BrandProduct.B
+			def product = new Product(brand: BrandProduct.B)
 			
 		when:
-			def service = productFlyweightProcessor.getService(b)
+			def service = productFlyweightProcessor.getService(product.brand)
 			service.save(product)
 		
 		then:
@@ -82,11 +80,10 @@ class ProductFlyweightProcessorIT extends Specification {
 	
 	def "Should return error if service not found"() {
 		given:
-			def product = new Product(name: "Test C")
-			def BrandProduct c = BrandProduct.C
+			def product = new Product(name: "Test C", brand: BrandProduct.C)
 			
 		when:
-			productFlyweightProcessor.getService(c)
+			productFlyweightProcessor.getService(product.brand)
 		
 		then:
 			def error = thrown(Exception)
