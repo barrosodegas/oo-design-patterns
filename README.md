@@ -32,12 +32,16 @@
   3. Factory with Generics, Strategy and Flyweight
   4. Singleton
 
-- Builder
+- Builder with:
   1. Generics and Reflection(Not recommended!!!)
   2. Singleton
 
-- Flyweight
+- Flyweight with:
   1. Strategy
+  
+- Adapter with:
+  1. Strategy
+  2. Generics
 
 # Note
 
