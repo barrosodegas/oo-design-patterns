@@ -8,7 +8,7 @@ import br.com.designPatterns.dto.ProductDto;
 import br.com.designPatterns.factory.withSingletonPattern.ProductFactorySingleton;
 
 @Component
-public class ProductGenericAdapter implements GenericAdapter<ProductDto, Product>{
+public class ProductGenericAdapter implements GenericAdapter<ProductDto, Product> {
 
 	@Override
 	public Product adapt(ProductDto dto) throws Exception {
