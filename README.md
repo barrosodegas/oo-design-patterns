@@ -43,6 +43,9 @@
   1. Strategy
   2. Generics
 
+- Template Method with:
+  1. Strategy and Generics
+
 # Note
 
 - This project was developed using the Spring and Java framework. But, the techniques applied here can be applied in any programming language that is 100% object oriented.
