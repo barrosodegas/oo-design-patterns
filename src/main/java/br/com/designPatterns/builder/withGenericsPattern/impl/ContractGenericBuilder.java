@@ -10,8 +10,7 @@ public class ContractGenericBuilder implements GenericBuilder<Contract> {
 
 	@Override
 	public Contract newEntity() {
-		// TODO Auto-generated method stub
-		return null;
+		return new Contract();
 	}
 
 }

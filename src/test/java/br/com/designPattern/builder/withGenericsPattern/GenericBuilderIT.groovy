@@ -8,6 +8,8 @@ import org.springframework.test.context.ContextConfiguration
 
 import br.com.designPatterns.DesignPatternsApplication
 import br.com.designPatterns.builder.withGenericsPattern.GenericBuilder
+import br.com.designPatterns.builder.withGenericsPattern.impl.ContractGenericBuilder
+import br.com.designPatterns.builder.withGenericsPattern.impl.PersonGenericBuilder
 import br.com.designPatterns.domain.Contract
 import br.com.designPatterns.domain.Person
 import spock.lang.Specification
@@ -23,6 +25,17 @@ class GenericBuilderIT extends Specification {
 	@Autowired
 	private GenericBuilder<Contract> contractGenericBuilder;
 	
+	def "Should inject Person and Contract of GenericBuilder"() {
+		when:
+			def person = personGenericBuilder.newEntity()
+			def contract = contractGenericBuilder.newEntity()
+		then:
+			personGenericBuilder instanceof PersonGenericBuilder
+			contractGenericBuilder instanceof ContractGenericBuilder
+			person instanceof Person
+			contract instanceof Contract
+	}
+
 	def "Should create a new empty Person"() {
 		when:
 			def result = personGenericBuilder.newEntity()
