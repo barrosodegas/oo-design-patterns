@@ -25,6 +25,7 @@
 
 - Strategy
   1. Simple Strategy
+  2. Enum
 
 - Factory with:
   1. Builder
