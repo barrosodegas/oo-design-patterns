@@ -1,4 +1,4 @@
-package br.com.designPattern.strategy.service.impl
+package br.com.designPattern.strategy.service
 
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.beans.factory.annotation.Qualifier
