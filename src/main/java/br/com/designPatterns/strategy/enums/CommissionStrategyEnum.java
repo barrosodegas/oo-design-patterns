@@ -36,7 +36,7 @@ public enum CommissionStrategyEnum {
 	
 	protected void validateValue(BigDecimal value) throws Exception {
 		
-		if(value == null || value.compareTo(BigDecimal.ZERO) <= 0) {
+		if (value == null || value.compareTo(BigDecimal.ZERO) <= 0) {
 			throw new Exception("Value is required!");
 		}
 	}
