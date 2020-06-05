@@ -8,7 +8,7 @@
 
 - Linux Ubuntu 18.10
 - Java 14
-- Spring Boot 2.2.7 
+- Spring Boot 2.2.7
 - Groovy 3.0.4 to BDD tests
 - IDE: Eclipse, InteliJ or your preference
 
@@ -39,13 +39,17 @@
 
 - Flyweight with:
   1. Strategy
-  
+
 - Adapter with:
   1. Strategy
   2. Generics
 
 - Template Method with:
   1. Strategy and Generics
+
+  - Singleton with:
+    1. Spring
+    2. Static
 
 # Note
 
